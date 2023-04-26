@@ -13,6 +13,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='sessionticket',
             name='ticket',
-            field=models.CharField(max_length=1024),
+            field=models.CharField(max_length=512),
         ),
     ]

@@ -10,7 +10,7 @@ from .utils import get_cas_client, get_user_from_session
 SessionStore = import_module(settings.SESSION_ENGINE).SessionStore
 
 
-SESSION_KEY_MAXLENGTH = 1024
+SESSION_KEY_MAXLENGTH = 512
 
 
 class ProxyError(ValueError):
@@ -73,7 +73,7 @@ class ProxyGrantingTicket(models.Model):
 
 class SessionTicket(models.Model):
     session_key = models.CharField(max_length=SESSION_KEY_MAXLENGTH)
-    ticket = models.CharField(max_length=1024)
+    ticket = models.CharField(max_length=512)
 
     @classmethod
     def clean_deleted_sessions(cls) -> None:

@@ -64,6 +64,8 @@ class CASBackend(ModelBackend):
             }
             if settings.CAS_CREATE_USER_WITH_ID:
                 user_kwargs['id'] = self.get_user_id(attributes)
+            if settings.CAS_CREATE_USER_WITH_EMAIL:
+                user_kwargs[UserModel.EMAIL_FIELD] = attributes.get('email') if attributes else None
 
             user, created = UserModel._default_manager.get_or_create(**user_kwargs)
             if created:
