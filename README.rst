@@ -1,3 +1,10 @@
+Extended from `django-cas-ng 4.3.0`_.
+
+Solved the 'max key length' problem of mysql.
+
+Support creating users with more attribute fields.
+
+
 django-cas-ng
 =============
 .. image:: https://img.shields.io/pypi/v/django-cas-ng.svg
@@ -66,3 +73,4 @@ This project adheres to Semantic Versioning. Checkout all the `Changelog`_.
 .. _Changelog: https://djangocas.dev/docs/latest/changelog.html
 .. _Installation: https://djangocas.dev/docs/latest/install.html
 .. _Configuration: https://djangocas.dev/docs/latest/configuration.html
+.. _django-cas-ng 4.3.0: https://github.com/tacnaci/django-cas-ng

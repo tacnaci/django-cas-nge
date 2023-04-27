@@ -9,8 +9,8 @@ with codecs.open('README.rst', encoding='utf-8') as f:
     readme = f.read()
 
 setup(
-    author='Ming Chen',
-    author_email='ming@djangocas.dev',
+    author='Joneai',
+    author_email='mxjoneai@gmail.com',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
@@ -37,7 +37,7 @@ setup(
     keywords=['django', 'cas', 'cas2', 'cas3', 'client', 'sso', 'single sign-on', 'Central Authentication Service', 'authentication', 'auth'],
     license='BSD',
     long_description=readme,
-    name='django-cas-ng',
+    name='django-cas-nge',
     packages=['django_cas_ng', 'django_cas_ng.management', 'django_cas_ng.management.commands', 'django_cas_ng.migrations'],
     package_data={
         'django_cas_ng': [
@@ -46,8 +46,8 @@ setup(
         ],
     },
     url='https://djangocas.dev',
-    download_url='https://github.com/django-cas-ng/django-cas-ng/releases',
-    version='4.3.0',
+    download_url='https://github.com/tacnaci/django-cas-nge/releases',
+    version='4.3.3',
     python_requires=">=3.7",
     install_requires=[
         'Django>=2.2',

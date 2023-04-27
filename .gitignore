@@ -20,3 +20,6 @@
 .tox
 .cache/
 .coverage
+
+venv
+.vscode
